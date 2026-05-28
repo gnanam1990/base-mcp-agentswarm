@@ -1,0 +1,58 @@
+{
+  "repo": "base-mcp-agentswarm",
+  "name": "AgentSwarm",
+  "shortName": "SW",
+  "api": "agentswarm",
+  "category": "Multi-Agent Orchestration",
+  "tagline": "Coordinated agent workflows with Base MCP approval gates.",
+  "status": "Swarm console MVP foundation",
+  "mission": "Coordinate monitor, research, risk, and execution agents while keeping policy limits and user approval gates visible.",
+  "primaryAction": "Launch swarm",
+  "secondaryAction": "Review policy",
+  "metrics": [
+    {
+      "label": "Active swarms",
+      "value": "5",
+      "tone": "blue"
+    },
+    {
+      "label": "Tool calls",
+      "value": "319",
+      "tone": "green"
+    },
+    {
+      "label": "Approval gates",
+      "value": "21",
+      "tone": "amber"
+    }
+  ],
+  "workflow": [
+    "User defines a goal, budget, and allowed protocols.",
+    "Monitor and research agents gather context.",
+    "Risk agent blocks unsafe or over-budget steps.",
+    "Execution agent prepares Base MCP actions only after approval."
+  ],
+  "tools": [
+    "launch_swarm",
+    "inspect_agent_run",
+    "set_policy_limits",
+    "approve_prepared_action"
+  ],
+  "records": [
+    [
+      "Yield monitor",
+      "Running",
+      "2 approvals"
+    ],
+    [
+      "Market research",
+      "Complete",
+      "4 paid reads"
+    ],
+    [
+      "Risk governor",
+      "Blocked 1",
+      "Policy active"
+    ]
+  ]
+}
