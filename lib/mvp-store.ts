@@ -68,7 +68,12 @@ const seedItems: MvpItem[] = seedRecords.map((record, index) => ({
 }));
 
 function dbPath() {
-  return process.env.AGENTSWARM_DATA_FILE || path.join(/*turbopackIgnore: true*/ process.cwd(), ".data", "agentswarm-db.json");
+  if (process.env.AGENTSWARM_DATA_FILE) {
+    return process.env.AGENTSWARM_DATA_FILE;
+  }
+  return process.env.VERCEL
+    ? path.join("/tmp", "agentswarm-db.json")
+    : path.join(/*turbopackIgnore: true*/ process.cwd(), ".data", "agentswarm-db.json");
 }
 
 function readDb(): MvpDb {
