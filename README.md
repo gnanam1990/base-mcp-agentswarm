@@ -1,30 +1,34 @@
 # AgentSwarm
 
-multi-agent orchestration for Base MCP workflows.
+Coordinated agent workflows with Base MCP approval gates.
 
-**Status:** Planned tenth build after the suite has reusable modules to orchestrate.
+**Status:** Swarm console MVP foundation
 
-AgentSwarm coordinates specialized agents for monitoring, risk, research, and execution, using existing suite modules as tools and Base MCP for approvals.
+Coordinate monitor, research, risk, and execution agents while keeping policy limits and user approval gates visible.
 
-## Why It Exists
-Base MCP gives AI assistants access to Base Account actions such as balances, sends, swaps, contract calls, and x402 payments, with user approval for writes. This project turns that capability into a focused product for advanced builders, AI-agent operators, and DeFi users who want transparent multi-agent collaboration.
+## Current MVP
+- Base industrial-neon UI theme from the shared suite prompt.
+- Responsive dashboard with wallet/action controls, metrics, workflow, MCP tools, and live record surface.
+- Product status API at `/api/agentswarm/status`.
+- Smoke checks for required dashboard data.
 
-## Core Capabilities
-- Agent orchestration runtime with monitor, risk, research, and execution roles.
-- Activity dashboard showing agent messages, decisions, tool calls, and approval gates.
-- Policy engine for budget caps, max risk, allowed protocols, and human checkpoints.
-- Integrations with OnchainOracle, AgentID, DeFi Copilot, VaultAI, and PayGate research.
-- MCP tools for launching strategies, pausing swarms, and approving prepared actions.
+## Local Development
+```bash
+npm install
+npm run dev
+```
 
-## Roadmap Snapshot
-1. Build read-only orchestration dashboard with simulated agents.
-2. Connect agents to suite APIs for data, reputation, and research.
-3. Add policy checks and approval gates.
-4. Enable one real user-approved strategy flow through Base MCP.
-5. Launch advanced demo after safety review and extensive logging.
+Open `http://127.0.0.1:3000`.
 
-## Repository Status
-This repository is public from day one. It starts with product, architecture, roadmap, and demo documentation. Implementation commits should stay small and use conventional commit prefixes.
+## Checks
+```bash
+npm run typecheck
+npm run build
+npm run test:smoke
+```
+
+## Next Build Slice
+Wire the mocked dashboard data into real Base Sepolia reads, x402 payment verification, or contract prepare endpoints depending on this product's launch path.
 
 ## License
 MIT
