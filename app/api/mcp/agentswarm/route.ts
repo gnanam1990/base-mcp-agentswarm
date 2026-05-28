@@ -46,7 +46,7 @@ export async function POST(request: Request) {
           slug: item.slug,
           priceUsdc: item.priceUsdc,
           resource: `/api/agentswarm/swarms/${item.slug}/run`,
-          network: process.env.AGENTSWARM_X402_NETWORK || "eip155:84532",
+          network: process.env.AGENTSWARM_X402_NETWORK || "eip155:8453",
         },
       });
     }

@@ -3,23 +3,23 @@
 ## Milestones
 ### 1. Build read-only orchestration dashboard with simulated agents.
 - Deliverable: a working, testable slice that can be committed and reviewed independently.
-- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base Sepolia before mainnet.
+- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base mainnet with demo limits before production scale.
 
 ### 2. Connect agents to suite APIs for data, reputation, and research.
 - Deliverable: a working, testable slice that can be committed and reviewed independently.
-- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base Sepolia before mainnet.
+- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base mainnet with demo limits before production scale.
 
 ### 3. Add policy checks and approval gates.
 - Deliverable: a working, testable slice that can be committed and reviewed independently.
-- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base Sepolia before mainnet.
+- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base mainnet with demo limits before production scale.
 
 ### 4. Enable one real user-approved strategy flow through Base MCP.
 - Deliverable: a working, testable slice that can be committed and reviewed independently.
-- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base Sepolia before mainnet.
+- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base mainnet with demo limits before production scale.
 
 ### 5. Launch advanced demo after safety review and extensive logging.
 - Deliverable: a working, testable slice that can be committed and reviewed independently.
-- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base Sepolia before mainnet.
+- Acceptance: docs updated, local checks pass, and any onchain or x402 behavior verified on Base mainnet with demo limits before production scale.
 
 ## Commit Standard
 - `feat:` user-facing behavior.
